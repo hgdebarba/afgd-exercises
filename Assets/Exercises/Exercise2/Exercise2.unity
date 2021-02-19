@@ -150,7 +150,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291112272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.29, y: 12.97, z: 0}
+  m_LocalPosition: {x: -12.57, y: 11.39, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1020513455}
@@ -365,7 +365,7 @@ MonoBehaviour:
   cp2: {fileID: 291112273}
   cp3: {fileID: 1720030881}
   cp4: {fileID: 2137886193}
-  curveType: 0
+  curveType: 1
   debugSegments: 24
   drawPath: 1
   pathColor: {r: 1, g: 0, b: 1, a: 1}
@@ -508,7 +508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720030880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 14.1, z: 0}
+  m_LocalPosition: {x: 6.93, y: 14.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1020513455}

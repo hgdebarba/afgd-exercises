@@ -86,8 +86,8 @@ namespace AfGD
             // draw the sphere using the draw functions in the Gizmos class
             // https://docs.unity3d.com/2020.2/Documentation/Manual/GizmosAndHandles
             // implement it here
-            //Gizmos.color = color;
-            //Gizmos.DrawWireSphere(position, radius);
+            Gizmos.color = color;
+            Gizmos.DrawWireSphere(position, radius);
 
             // OPTIONALLY, approximete a circle using a sequence of Debug.DrawLine calls
             // you can do that by using the sine and cosine functions in Mathf, 
@@ -95,7 +95,7 @@ namespace AfGD
             // you also need the radius and position of the circle to define the start and end points of each line segment
             // https://docs.unity3d.com/2020.2/Documentation/Manual/class-Debug
             // implement it here
-            int steps = 30;
+            int steps = 3;
             float radStep = (Mathf.PI * 2) / steps;
             for (int i = 0; i < steps; i++)
             {
@@ -141,7 +141,7 @@ namespace AfGD
                 Edge e = box.GetEdge(i);
 
                 // TODO exercise 1.4 
-                // test intersection only if the angle between the normal and velocity is less than 90 degrees
+                // test intersection only if the angle between the normal and velocity is more than 90 degrees
                 // why do you think that we run this test? Slide 45
                 // if (true) // replace this with your implementation
                 if (Vector2.Dot(ball.velocity, e.normal) <= 0)
@@ -201,7 +201,7 @@ namespace AfGD
             // set the initial position and velocity of the ball
             // implement it here
             ball.velocity = Vector2.up * ballSpeed;
-            ball.position = new Vector2(0, paddle.position.y + paddle.sides.y + ball.radius);
+            ball.position = new Vector2(paddle.position.x, paddle.position.y + paddle.sides.y + ball.radius);
         }
 
         void HandleOutOfBounds()
